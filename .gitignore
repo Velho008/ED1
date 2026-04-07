@@ -1,0 +1,7 @@
+# VS Code settings
+.vscode/
+
+# executáveis C/C++
+*.exe
+*.out
+*.o
