@@ -48,5 +48,9 @@ int main()
     torreHanoi(n, 'a','b','c', &jogadas);
     
 
+    //recursão x iteração:
+        //em iteração tem um maximo definido, tipo num for, while, do while
+        //ja em recursão é baseado em chamadas repetidas da propria função
+
     return 0;
 }
