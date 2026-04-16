@@ -50,7 +50,7 @@ int main()
 
     //recursão x iteração:
         //em iteração tem um maximo definido, tipo num for, while, do while
-        //ja em recursão é baseado em chamadas repetidas da propria função
+        //ja em recursão é baseado em chamadas repetidas da propria função até cair no caso base
 
     return 0;
 }
