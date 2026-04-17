@@ -6,4 +6,7 @@
 *.out
 *.o
 
+# area de testes
+teste.c
+
 !.readme.md
