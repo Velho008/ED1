@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int mostrarEstoque(int estoque[], char catalogo[][10], int tamanho)
+void mostrarEstoque(int estoque[], char catalogo[][10], int tamanho)
 {
     printf("ESTOQUE\n");
     for(int i = 0; i < tamanho; i++)
@@ -128,7 +128,8 @@ int main()
     } while(escolha !=0);
     //pensei em implementar typedef pra produtos, catalogo e esse sizeof pra chamar de mercadinho, mas dá mto trabalho
     //pensei em tratar erros pra entrada aceitar string e dar erro no lugar de só crashar
-    //falta começar com numero aleatorios, atualmente é fixo
+    //falta começar com numero aleatorios, atualmente é fixo, dá pra fazer com seed
+    //pensei em tratar erros de entrada numerica, tipo, <0 ou >max
 
     return 0;
 }
