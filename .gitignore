@@ -8,5 +8,6 @@
 
 # area de testes
 teste.c
+bin/
 
 !.readme.md
