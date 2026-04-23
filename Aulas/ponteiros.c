@@ -11,6 +11,16 @@ tipo *nome_ponteiro //tipo é o tipo do dado que o ponteiro aponta
 & pega endereço
 * pega o valor do endereço
 *nome é um ponteiro ou o valor do endereço de um ponteiro
+int x = 5;
+int *p = &x;
+int **pp = &p; //ponteiro pro ponteiro
+
+int v[] = {10, 20, 30};
+int *p = v;       // p aponta para o início do array (v já é um endereço)
+
+printf("%d\n", *p);      // 10
+printf("%d\n", *(p+1));  // 20 (aritmética de ponteiros)
+printf("%d\n", p[2]);    // 30 (notação de array funciona igual)
 
 SEMPRE INICIALIZA O PONTEIRO ANTES DE USAR
 nao tente acessar areas nao alocadas da memoria
