@@ -16,8 +16,6 @@ int main()
     p2.x = 30;
     p2.y = 40;
 
-    // Até aqui, tudo funcionou perfeitamente normalmente.
-
     // Definição de um ponteiro para 'ponto' chamado 'ptr'. Este é utilizado para acessar os valores dos pontos por referência.
     ponto *ptr;
     // Atribui o endereço da variável p1 à este ponteiro, permitindo-nos acessar os seus valores através deste ponteiro.
@@ -29,4 +27,7 @@ int main()
 
     return 0;
 }
-
+/*
+Structs permitem organizar dados complexos
+Ponteiros evitam copias e permitem manipulacao eficiente
+perceptivel a diferença entre . e ->*/
