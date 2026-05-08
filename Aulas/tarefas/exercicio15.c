@@ -30,7 +30,7 @@ Empregado criarEmpregado()
 void salvarEmpregado(Empregado empregado)
 {
     FILE *arquivo;
-    arquivo = fopen("employee.dat", "a");
+    arquivo = fopen("bin/employee.dat", "a");
 
     if (arquivo == NULL)
     {
