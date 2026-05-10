@@ -29,4 +29,6 @@ int main()
     // endereços
     printf("%p\n", &valor);
     printf("%p\n", &valorfloat);
+
+    return 0;
 }
