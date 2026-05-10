@@ -1,3 +1,4 @@
+#include <stdio.h>
 /*  Exercício 1 — Inspeção de memória
     Escreva um programa que:
 
@@ -10,3 +11,22 @@
 
         Imprima:
             valor da variável   */
+
+int main()
+{
+    int valor = 80;
+    float valorfloat = 5.8965854;
+    int *ponteiroint;
+    float *ponteirofloat;
+
+    ponteiroint = &valor;
+    ponteirofloat = &valorfloat;
+
+    // valores
+    printf("%d\n", *ponteiroint);
+    printf("%.2f\n", *ponteirofloat);
+
+    // endereços
+    printf("%p\n", &valor);
+    printf("%p\n", &valorfloat);
+}
