@@ -1,0 +1,5 @@
+32345678000101;Tech Solutions;Brasilia;6155551111
+32345678000102;Contabilidade Exata;Taguatinga;6155552222
+32345678000103;Clinica Vida;Ceilandia;6155553333
+32345678000104;Consultoria Prime;Aguas Claras;6155554444
+32345678000105;Transporte Rapido;Planaltina;6155555555

@@ -1,0 +1,5 @@
+12345678000101;Metalurgica Brasil;Brasilia;6133331111
+12345678000102;Construtora Alfa;Taguatinga;6133332222
+12345678000103;Industria Gama;Gama;6133333333
+12345678000104;Fabrica Horizonte;Ceilandia;6133334444
+12345678000105;Industria Central;Sobradinho;6133335555
