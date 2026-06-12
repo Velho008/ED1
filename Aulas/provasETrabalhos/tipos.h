@@ -1,12 +1,14 @@
-typedef  struct  { 
-char  cidade [20]; 
-float  * temperatura ; 
+typedef  struct  
+{ 
+    char  cidade [20]; 
+    float  * temperatura; 
 }  TMedidas; 
  
-typedef  struct  { 
-int  qtde_dias;  // Quantidade   maxima  de  medidas 
-int  qtde_medidas;   // Qtde  de  medidas  registradas 
-TMedidas  * medidas;  
+typedef  struct  
+{ 
+    int  qtde_dias;  // Quantidade   maxima  de  medidas 
+    int  qtde_medidas;   // Qtde  de  medidas  registradas 
+    TMedidas  * medidas;  
 }  TTemperaturas; 
 
 //arquivo ligado ao trabalho 2
