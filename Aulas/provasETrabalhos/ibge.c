@@ -21,7 +21,6 @@ int validateFile(char* fileName)
 
     if (file == NULL)
     {
-        fclose(file);
         return 0;
     }
 
@@ -165,11 +164,11 @@ int main()
                 break;
             
             case 2:
-
+                //falta aqui
                 break;
 
             case 3:
-
+                //falta aqui
                 break;
 
             default:
