@@ -96,13 +96,14 @@ EXERCICIO DO SLIDE:
     •Qual é o percurso em ordem?
 
 RESPOSTAS:
-1:  15(8(4(2,6),11(10,13))),(22(18,27)) -> raiz(esquerda,direita)
+1:  15(8(4(2,6),11(10,13)),22(18,27)) -> raiz(esquerda,direita)
 
 2:
     1: 15
-    2: 8, 4, 2 
+    2: 8 (de 15), 4 (de 8), 2 (de 4), 18 (de 22), 10 (de 11) esq
+       22 (de 15), 11 (de 8), 6 (de 4), 27 (de 22), 13 (de 11) dir
     3: 2, 6, 10, 13, 18, 27
-    4: 8, 22, 4, 11
+    4: 8, 22, 4, 11, 15
 
 3: 
     1: 15, 8, 4, 2, 6, 11, 10, 13, 22, 18, 27 (raiz -> esquerda -> direita)
@@ -119,11 +120,55 @@ RESPOSTAS:
     folhas: 2, 6, 10, 13, 18, 27
     filho esquerdo de 8: 4
     filho direito de 11: 13
-    subarvore enraizada em 8: 4   11
-                             / \  / \
-                            2   6 10 13
+    subarvore enraizada em 8: 8
+                             / \
+                            4   11
+                           / \  / \
+                          2   6 10 13
     percurso em ordem: já respondido anteriormente
 */
+
+void AdicionaNo(int info, NoBin **raiz)
+{
+    if (*raiz == NULL) // trata arvore vazia (ou subarvore)
+    {
+        NoBin *novo = CriarNo(info);
+        if (novo == NULL)
+        {
+            printf("ERRO: falha ao alocar memoria, insercao cancelada\n");
+            return;
+        }
+        *raiz = novo;
+        return;
+    }
+
+    if (info < (*raiz)->info) //caso menor
+    {
+        AdicionaNo(info, &(*raiz)->esq);
+        return;
+    }
+
+    AdicionaNo(info, &(*raiz)->dir);
+    return;
+}
+
+NoBin *CriarNo(int info)
+{
+    NoBin *novo;
+    novo = (NoBin *)malloc(sizeof(NoBin));
+
+    if (novo == NULL)
+    {
+        return NULL;
+    }
+
+    novo->info = info;
+    novo->dir = NULL;
+    novo->esq = NULL;
+    return novo;
+}
+
+
 
 int main()
 {
